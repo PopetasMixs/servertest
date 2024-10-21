@@ -1,0 +1,17 @@
+spring:
+    application:
+      name: crud
+# DB configuration
+    datasource:
+      username: popetasdev
+      password: 1013105691
+      url: jdbc:postgresql://localhost:5432/crud
+      driver-class-name: org.postgresql.Driver
+# JPA configuration
+    jpa:
+      hibernate:
+        ddl-auto: create-drop
+      show-sql: true
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect

@@ -1,0 +1,1 @@
+package com.crud.service.dao;import jakarta.transaction.Transactional;import org.springframework.data.domain.Page;import org.springframework.data.domain.Pageable;import java.util.List;public interface Idao <T, ID> {    public List<T> findAll();    public T findById(ID id);    @Transactional    public void save(T obj);    Page<T> findAll(Pageable pageable);}
